@@ -1,0 +1,26 @@
+Hướng Dẫn Sử Dụng Code :
+
+Tải code rồi up lên hosting
+Sau khi up xong tìm và mở file /config.php
+Tìm dòng có dạng code  $conn = mysql_connect(‘localhost’, ‘root’, ‘pass’)
+Thay root bằng tên người dùng db . Thay pass bằng mật khẩu người dùng db .
+Tìm tiếp dòng mysql_select_db(‘test‘) or die(‘Could not select database’);
+Thay test bằng tên db của hosting bạn
+Rồi tìm trong code có tệp truyen_2016_07_05_20_39.sql . Tải tệp đó về up lên phpmyadmin
+Tìm file /read.php thay dòng code foreach($html->find(‘div.chapter-content’) as $element) bằng dòng code này foreach($html->find(‘div.chapter-c’) as $element)
+Rồi còn vài thứ lặt vặt các bạn tự edit nhé
+Hướng dẫn dùng tool leech:
++ Vì để dùng cá nhân nên em cũng chả làm GUI cứ leech đc là đc 😀 nên các bác thông cảm!
++ Tool để trong thư mục /leech. VD: các bác muôn lấy truyện từ truyenfull đầu tiên chạy file truyenfull_getlist.php sau khi nó chạy xong chạy tiếp file truyenfull_get_thongtin.php cho nó lấy nội dung là xong! Các bác cũng có thể mở file truyenfull_getlist.php để config lại biến $page, nếu lâu rồi không leech thì để số lớn chút còn hằng ngày thì để 5 là đc! truyenyy thì cũng tương tự!
+
+OK như vậy là bạn đã cài đặt thành công source code truyện rồi .
+
+Và đây là demo cho các bạn xem : 
+Chúc các bạn thành công
+Lưu Ý :
+– Vì đây chỉ là một source code thôi chứ chưa phải là một code hoàn hảo . Vì vậy trong source chưa có chức năng post bài  và nhiều chức năng khác , các bạn phải tự viết thêm . Cái điểm đặc biệt là cái tool auto leech bài sẽ giúp bạn không cần ngồi viết bài hoặc đi leech truyện bằng tay . Bạn chỉ cần bật tool và đợi tool leech truyện về site chính của mình
+– Hiện tại tool leech thì chủ code này cũng chưa chia sẻ nên hiện tại source code chỉ gồm cái style cộng data hơn 5 ngàn truyện và 1 triệu chap thôi . Ít lắm
+Cập Nhật Bài Viết 03/02/2017 : Cập Nhập Tool Leech
+– Code thực ra chỉ có thật ra code khoảng 1,4MB thôi nhưng do mình giữ nguyên các plugin của template để bác nào có thích mở rộng thì search tên template đó để xem các gọi các plugin mà dùng thêm!
+
+Nguồn Code : @dl2811 – Vina4u.Pro
